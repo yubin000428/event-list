@@ -118,15 +118,22 @@ const EventList: React.FC = () => {
           <button 
           className="btn btn-primary mt-4" 
           onClick={handleEventNameFilter}
+          style={{backgroundColor: 'green',
+                  color: 'white',
+                  borderColor: 'green'}}
           >검색</button>
         </div>
         <div className="col-md-3 mb-3 d-flex justify-content-end">
-          <Link to={`/event/add`} className="btn btn-primary mt-4">이벤트 추가</Link>
+          <Link to={`/event/add`} 
+            className="btn btn-primary mt-4" 
+            style={{backgroundColor: 'green',
+              color: 'white',
+              borderColor: 'green'}}>이벤트 추가</Link>
         </div>
       </div>
       <div className="table-responsive">
         <table className="table table-striped table-bordered mt-3">
-          <thead className="thead-dark">
+          <thead className="table-success">
             <tr>
               <th className="text-center" style={{ width: "5%" }}>NO</th>
               <th className="text-center" style={{ width: "15%" }}>이벤트명</th>
@@ -151,7 +158,10 @@ const EventList: React.FC = () => {
                   <button 
                     onClick={() => modEvent(event)}
                     className="btn btn-primary ms-2"
-                    style={{ marginTop: 4 }}
+                    style={{marginTop: 4,
+                            backgroundColor: 'green',
+                            color: 'white',
+                            borderColor: 'green'}}
                   >
                     수정
                   </button>

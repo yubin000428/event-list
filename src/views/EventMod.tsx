@@ -117,7 +117,7 @@ const EventMod = () => {
           >
             목록
           </Link>
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-primary" style={{backgroundColor: 'green', color: 'white', borderColor: 'green'}}>
             {id ? '수정' : '추가'}
           </button>
         </div>
