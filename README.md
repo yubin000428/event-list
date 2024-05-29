@@ -1,46 +1,45 @@
-# Getting Started with Create React App
+## 인사이터 과제 - EventPage 만들기
+####안녕하세요. 이번에 인사이터 과제에 참여하게된 최유빈입니다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+----------------
 
-## Available Scripts
+####실행방법
 
-In the project directory, you can run:
+- src/db/data.json 파일에 임의의 JSON 데이터를 만들어 놨습니다.
+1. 터미널에 **npm start**를 입력합니다.
+2. 실행이 되면 **npx json-server --watch ./src/db/data.json --port 3001** 를 입력해 json-server를 만들어줍니다.
 
-### `npm start`
+----------
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Make Page
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+-EventList 페이지 ( 리스트 페이지 )
+-EventMod 페이지 ( 수정, 추가 페이지 )
+-data.json
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### 이벤트 목록 페이지
 
-### `npm run build`
+- 페이지네이션
+  ( 리스트가 5개씩 보이도록 설정했습니다. )
+- 날짜별 필터링
+  ( 날짜와 시간이 오름차순으로 리스트에 보이도록 설정했습니다. )
+- 날짜 기준 검색
+  ( 해당 날짜를 date picker 에서 선택할 수 있게 하였고, 해당 날짜를 date picker에서 선택 후 이벤트명 검색 가능하게 하였습니다. )
+- 이벤트 명 검색은 두글자 이상부터 검색 되도록 설정 하였고, 두글자 미만일 시에는 alert 창 뜨면서 검색이 안되도록 설정하였습니다.
+- Enter 눌러도 검색 버튼 누른거처럼 가능하게 설정하였습니다.
+- 추가 버튼 누르면 새로운 이벤트를 추가할 수 있게 설정하였습니다.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### 이벤트 추가 및 수정 페이지
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+- 이벤트 추가 또는 수정시, 해당 내용이 이벤트 목록 페이지에 반영
+( 추가, 수정한 후에 완료되었다는 팝업창과 함께 list로 되돌아갑니다. )
+- 이벤트 목록 페이지에서 이벤트를 삭제할 수 있습니다.
+( 삭제 버튼 클릭시 팝업창이 뜨며 확인을 누르면 삭제가 됩니다. )
+- axios와 fetch를 사용해 Mock API를 호출합니다.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+감사합니다.
