@@ -1,0 +1,60 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "name": "Event 1",
+      "date": "2024-06-01",
+      "time": "10:00",
+      "location": "서울",
+      "description": "event 1."
+    },
+    {
+      "id": "2",
+      "name": "Event 2",
+      "date": "2024-06-02",
+      "time": "11:00",
+      "location": "부산",
+      "description": "event 2."
+    },
+    {
+      "id": "3",
+      "name": "Event 3",
+      "date": "2024-06-03",
+      "time": "22:20",
+      "location": "서울",
+      "description": "event 3."
+    },
+    {
+      "id": "4",
+      "name": "Event 4",
+      "date": "2024-06-02",
+      "time": "16:00",
+      "location": "서울",
+      "description": "event 4."
+    },
+    {
+      "id": "5",
+      "name": "Event 5",
+      "date": "2024-06-01",
+      "time": "11:22",
+      "location": "부산",
+      "description": "event 5."
+    },
+    {
+      "id": "6",
+      "name": "Event 6",
+      "date": "2024-06-06",
+      "time": "1:00",
+      "location": "서울",
+      "description": "event 6."
+    },
+    {
+      "id": "7",
+      "name": "Event 7",
+      "date": "2024-06-02",
+      "time": "15:00",
+      "location": "서울",
+      "description": "event 7."
+    }
+  ]
+}
