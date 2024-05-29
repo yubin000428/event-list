@@ -2,13 +2,13 @@
 
 #### 안녕하세요 ! 이번에 인사이터 과제에 참여하게된 최유빈입니다.
 
-----------------
+
 
 ### 실행방법
 
-- src/db/data.json 파일에 임의의 JSON 데이터를 만들어 놨습니다.
-1. 터미널에 **npm start**를 입력합니다.
-2. 실행이 되면 **npx json-server --watch ./src/db/data.json --port 3001** 를 입력해 json-server를 만들어줍니다.
+1. **./src/db/data.json** 파일에 임의의 JSON 데이터를 만들어 놓았습니다.
+2. 터미널에 **npm start**를 입력합니다.
+3. 실행이 되면 **npx json-server --watch ./src/db/data.json --port 3001** 를 입력해 json-server를 만들어줍니다.
 
 ----------
 
