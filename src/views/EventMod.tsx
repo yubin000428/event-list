@@ -62,7 +62,7 @@ const EventMod = () => {
             window.location.href = '/event/list';
           })
           .catch(error => {
-            console.error("이벤트를 수정하는 동안 오류가 발생했습니다.", error);
+            console.error("error", error);
             window.alert("이벤트를 수정하는 동안 오류가 발생했습니다.");
           });
       } else {
@@ -74,7 +74,7 @@ const EventMod = () => {
             window.location.href = '/event/list';
           })
           .catch(error => {
-            console.error("새 이벤트를 추가하는 동안 오류가 발생했습니다.", error);
+            console.error("error", error);
             window.alert("새 이벤트를 추가하는 동안 오류가 발생했습니다.");
           });
       }
@@ -85,32 +85,34 @@ const EventMod = () => {
 
   return (
     <div className="container mt-5">
-      <h2>{id ? '이벤트 수정' : '이벤트 추가'}</h2>
+      <h2>{id ? 'Event 수정' : 'Event 추가'}</h2>
+      <hr className="my-10" />
+      &nbsp;
       <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label htmlFor="name">이벤트명:</label>
+        <div className="mb-3">
+          <label htmlFor="name" className="form-label">이벤트명</label>
           <input type="text" className="form-control" id="name" name="name" value={name} onChange={handleChange} />
         </div>
-        <div className="form-group">
-          <label htmlFor="date">날짜:</label>
+        <div className="mb-3">
+          <label htmlFor="date" className="form-label">날짜</label>
           <input type="date" className="form-control" id="date" name="date" value={date} onChange={handleChange} />
         </div>
-        <div className="form-group">
-          <label htmlFor="time">시간:</label>
+        <div className="mb-3">
+          <label htmlFor="time" className="form-label">시간</label>
           <input type="time" className="form-control" id="time" name="time" value={time} onChange={handleChange} />
         </div>
-        <div className="form-group">
-          <label htmlFor="location">장소:</label>
+        <div className="mb-3">
+          <label htmlFor="location" className="form-label">장소</label>
           <input type="text" className="form-control" id="location" name="location" value={location} onChange={handleChange} />
         </div>
-        <div className="form-group">
-          <label htmlFor="description">설명:</label>
+        <div className="mb-3">
+          <label htmlFor="description" className="form-label">설명</label>
           <textarea className="form-control" id="description" name="description" value={description} onChange={handleChange} />
         </div>
-        <div className="justify-content-end">
+        <div className="d-flex justify-content-end">
           <Link
             to={`/event/list`}
-            className="btn btn-primary ml-2"
+            className="btn btn-secondary"
             style={{ marginRight: 8 }}
           >
             목록

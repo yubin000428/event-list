@@ -1,12 +1,12 @@
 {
   "events": [
     {
-      "id": "1",
       "name": "Event 1",
       "date": "2024-06-01",
       "time": "10:00",
-      "location": "서울",
-      "description": "event 1."
+      "location": "서울시 마포구",
+      "description": "2024년 6월 1일 오전 10시에 event 1 예정입니다.",
+      "id": "1"
     },
     {
       "id": "2",
@@ -14,7 +14,7 @@
       "date": "2024-06-02",
       "time": "11:00",
       "location": "부산",
-      "description": "event 2."
+      "description": "2024년 6월 2일 오전 11시에 event 2 예정입니다."
     },
     {
       "id": "3",
@@ -22,7 +22,7 @@
       "date": "2024-06-03",
       "time": "22:20",
       "location": "서울",
-      "description": "event 3."
+      "description": "2024년 6월 3일 오후 10시 20분에 event 3 예정입니다."
     },
     {
       "id": "4",
@@ -30,7 +30,7 @@
       "date": "2024-06-02",
       "time": "16:00",
       "location": "서울",
-      "description": "event 4."
+      "description": "2024년 6월 2일 오후 4시에 event 4 예정입니다."
     },
     {
       "id": "5",
@@ -38,7 +38,7 @@
       "date": "2024-06-01",
       "time": "11:22",
       "location": "부산",
-      "description": "event 5."
+      "description": "2024년 6월 1일 오전 11시 22분에 event 5 예정입니다."
     },
     {
       "id": "6",
@@ -46,15 +46,23 @@
       "date": "2024-06-06",
       "time": "1:00",
       "location": "서울",
-      "description": "event 6."
+      "description": "2024년 6월 6일 오전 1시에 event 6 예정입니다."
     },
     {
-      "id": "7",
       "name": "Event 7",
       "date": "2024-06-02",
       "time": "15:00",
       "location": "서울",
-      "description": "event 7."
+      "description": "2024년 6월 2일 오후 3시에 event 7 예정입니다",
+      "id": "7"
+    },
+    {
+      "name": "Event 8",
+      "date": "2024-05-22",
+      "time": "15:20",
+      "location": "서울",
+      "description": "2024년 5월 22일 오후 3시20분에 event 8 예정입니다",
+      "id": "8"
     }
   ]
 }
